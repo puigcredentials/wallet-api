@@ -8,10 +8,12 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
+
   build:
     name: build and analyze
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -62,14 +64,13 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+      - name: Debug Secrets (do not use in production)
+        run: |
+          echo "DOCKERHUB_USERNAME=${{ secrets.DOCKER_USERNAME }}"
+          echo "DOCKERHUB_PASSWORD=${{ secrets.DOCKER_PASSWORD }}"
+
       - name: Make Gradlew Executable
         run: chmod +x ./gradlew
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build and Push docker image
         run: |
@@ -79,7 +80,10 @@ jobs:
           PROJECT_NAME=$(./gradlew -q printProjectName)
           IMAGE_TAG="$PROJECT_NAME:v$VERSION$SUFFIX"
           docker build --file Dockerfile --build-arg SKIP_TESTS=true --tag $DOCKER_HUB_CLIENT_NAME/$IMAGE_TAG .
+          echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
           docker push $DOCKER_HUB_CLIENT_NAME/$IMAGE_TAG
         env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
           DOCKER_HUB_CLIENT_NAME: ${{ secrets.DOCKER_HUB_CLIENT_NAME }}
           SUFFIX: -SNAPSHOT
