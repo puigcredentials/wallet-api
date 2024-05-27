@@ -45,7 +45,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew build sonar --info
+        run: ./gradlew sonarqube -Dsonar.login=${{ secrets.SONAR_TOKEN }}
 
   deploy-test:
     name: deploy-test
@@ -63,11 +63,6 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '17'
-
-      - name: Debug Secrets (do not use in production)
-        run: |
-          echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}"
-          echo "DOCKER_PASSWORD=${{ secrets.DOCKER_PASSWORD }}"
 
       - name: Make Gradlew Executable
         run: chmod +x ./gradlew
