@@ -66,8 +66,8 @@ jobs:
 
       - name: Debug Secrets (do not use in production)
         run: |
-          echo "DOCKERHUB_USERNAME=${{ secrets.DOCKER_USERNAME }}"
-          echo "DOCKERHUB_PASSWORD=${{ secrets.DOCKER_PASSWORD }}"
+          echo "DOCKER_USERNAME=${{ secrets.DOCKER_USERNAME }}"
+          echo "DOCKER_PASSWORD=${{ secrets.DOCKER_PASSWORD }}"
 
       - name: Make Gradlew Executable
         run: chmod +x ./gradlew
