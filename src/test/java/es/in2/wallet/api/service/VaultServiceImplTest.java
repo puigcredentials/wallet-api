@@ -1,9 +1,9 @@
 package es.in2.wallet.api.service;
 
-import es.in2.wallet.infrastructure.vault.model.KeyVaultSecret;
-import es.in2.wallet.infrastructure.vault.service.impl.VaultServiceImpl;
-import es.in2.wallet.infrastructure.vault.service.GenericVaultService;
-import es.in2.wallet.infrastructure.vault.util.VaultFactory;
+import es.puig.wallet.infrastructure.vault.model.KeyVaultSecret;
+import es.puig.wallet.infrastructure.vault.service.impl.VaultServiceImpl;
+import es.puig.wallet.infrastructure.vault.service.GenericVaultService;
+import es.puig.wallet.infrastructure.vault.util.VaultFactory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,13 +1,13 @@
 package es.in2.wallet.api.facade;
 
-import es.in2.wallet.application.workflow.presentation.impl.AttestationExchangeDOMEWorkflowImpl;
-import es.in2.wallet.domain.model.AuthorizationRequest;
-import es.in2.wallet.domain.model.VcSelectorRequest;
-import es.in2.wallet.domain.model.VcSelectorResponse;
-import es.in2.wallet.domain.service.AuthorizationRequestService;
-import es.in2.wallet.domain.service.AuthorizationResponseService;
-import es.in2.wallet.domain.service.DomeVpTokenService;
-import es.in2.wallet.domain.service.PresentationService;
+import es.puig.wallet.application.workflow.presentation.impl.AttestationExchangeDOMEWorkflowImpl;
+import es.puig.wallet.domain.model.AuthorizationRequest;
+import es.puig.wallet.domain.model.VcSelectorRequest;
+import es.puig.wallet.domain.model.VcSelectorResponse;
+import es.puig.wallet.domain.service.AuthorizationRequestService;
+import es.puig.wallet.domain.service.AuthorizationResponseService;
+import es.puig.wallet.domain.service.DomeVpTokenService;
+import es.puig.wallet.domain.service.PresentationService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

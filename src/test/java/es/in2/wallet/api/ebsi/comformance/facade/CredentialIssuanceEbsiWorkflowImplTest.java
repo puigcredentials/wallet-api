@@ -3,12 +3,12 @@ package es.in2.wallet.api.ebsi.comformance.facade;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import es.in2.wallet.application.port.BrokerService;
-import es.in2.wallet.application.workflow.issuance.impl.CredentialIssuanceEbsiWorkflowImpl;
-import es.in2.wallet.domain.model.*;
-import es.in2.wallet.domain.service.*;
-import es.in2.wallet.domain.util.ApplicationUtils;
-import es.in2.wallet.infrastructure.ebsi.config.EbsiConfig;
+import es.puig.wallet.application.port.BrokerService;
+import es.puig.wallet.application.workflow.issuance.impl.CredentialIssuanceEbsiWorkflowImpl;
+import es.puig.wallet.domain.model.*;
+import es.puig.wallet.domain.service.*;
+import es.puig.wallet.domain.util.ApplicationUtils;
+import es.puig.wallet.infrastructure.ebsi.config.EbsiConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -25,9 +25,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import static es.in2.wallet.domain.util.ApplicationConstants.USER_ENTITY_PREFIX;
-import static es.in2.wallet.domain.util.ApplicationUtils.extractResponseType;
-import static es.in2.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
+import static es.puig.wallet.domain.util.ApplicationConstants.USER_ENTITY_PREFIX;
+import static es.puig.wallet.domain.util.ApplicationUtils.extractResponseType;
+import static es.puig.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)

@@ -1,12 +1,12 @@
 package es.in2.wallet.api.service;
 
-import es.in2.wallet.application.workflow.issuance.CredentialIssuanceCommonWorkflow;
-import es.in2.wallet.application.workflow.issuance.CredentialIssuanceEbsiWorkflow;
-import es.in2.wallet.application.workflow.presentation.AttestationExchangeCommonWorkflow;
-import es.in2.wallet.application.workflow.presentation.AttestationExchangeDOMEWorkflow;
-import es.in2.wallet.domain.exception.NoSuchQrContentException;
-import es.in2.wallet.domain.model.VcSelectorRequest;
-import es.in2.wallet.domain.service.impl.QrCodeProcessorServiceImpl;
+import es.puig.wallet.application.workflow.issuance.CredentialIssuanceCommonWorkflow;
+import es.puig.wallet.application.workflow.issuance.CredentialIssuanceEbsiWorkflow;
+import es.puig.wallet.application.workflow.presentation.AttestationExchangeCommonWorkflow;
+import es.puig.wallet.application.workflow.presentation.AttestationExchangeDOMEWorkflow;
+import es.puig.wallet.domain.exception.NoSuchQrContentException;
+import es.puig.wallet.domain.model.VcSelectorRequest;
+import es.puig.wallet.domain.service.impl.QrCodeProcessorServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

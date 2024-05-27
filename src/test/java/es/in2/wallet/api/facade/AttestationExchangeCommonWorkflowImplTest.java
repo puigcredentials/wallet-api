@@ -1,14 +1,14 @@
 package es.in2.wallet.api.facade;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import es.in2.wallet.application.port.BrokerService;
-import es.in2.wallet.application.workflow.presentation.impl.AttestationExchangeCommonWorkflowImpl;
-import es.in2.wallet.domain.model.AuthorizationRequest;
-import es.in2.wallet.domain.model.CredentialsBasicInfo;
-import es.in2.wallet.domain.model.VcSelectorRequest;
-import es.in2.wallet.domain.model.VcSelectorResponse;
-import es.in2.wallet.domain.service.*;
-import es.in2.wallet.domain.util.ApplicationUtils;
+import es.puig.wallet.application.port.BrokerService;
+import es.puig.wallet.application.workflow.presentation.impl.AttestationExchangeCommonWorkflowImpl;
+import es.puig.wallet.domain.model.AuthorizationRequest;
+import es.puig.wallet.domain.model.CredentialsBasicInfo;
+import es.puig.wallet.domain.model.VcSelectorRequest;
+import es.puig.wallet.domain.model.VcSelectorResponse;
+import es.puig.wallet.domain.service.*;
+import es.puig.wallet.domain.util.ApplicationUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -21,7 +21,7 @@ import reactor.test.StepVerifier;
 
 import java.util.List;
 
-import static es.in2.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
+import static es.puig.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.when;

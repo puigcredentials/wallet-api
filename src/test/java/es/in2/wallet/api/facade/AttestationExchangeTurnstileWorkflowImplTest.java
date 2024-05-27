@@ -1,10 +1,10 @@
 package es.in2.wallet.api.facade;
 
 import com.fasterxml.jackson.core.JsonParseException;
-import es.in2.wallet.application.workflow.presentation.impl.AttestationExchangeTurnstileWorkflowImpl;
-import es.in2.wallet.domain.model.CredentialsBasicInfo;
-import es.in2.wallet.domain.service.CborGenerationService;
-import es.in2.wallet.domain.service.PresentationService;
+import es.puig.wallet.application.workflow.presentation.impl.AttestationExchangeTurnstileWorkflowImpl;
+import es.puig.wallet.domain.model.CredentialsBasicInfo;
+import es.puig.wallet.domain.service.CborGenerationService;
+import es.puig.wallet.domain.service.PresentationService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

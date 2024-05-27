@@ -1,8 +1,8 @@
 package es.in2.wallet.api.service;
 
-import es.in2.wallet.domain.exception.JwtInvalidFormatException;
-import es.in2.wallet.domain.exception.ParseErrorException;
-import es.in2.wallet.domain.service.impl.VerifierValidationServiceImpl;
+import es.puig.wallet.domain.exception.JwtInvalidFormatException;
+import es.puig.wallet.domain.exception.ParseErrorException;
+import es.puig.wallet.domain.service.impl.VerifierValidationServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

@@ -1,7 +1,7 @@
 package es.in2.wallet.broker.adapter;
 
-import es.in2.wallet.infrastructure.broker.adapter.OrionLdAdapter;
-import es.in2.wallet.infrastructure.broker.config.BrokerConfig;
+import es.puig.wallet.infrastructure.broker.adapter.OrionLdAdapter;
+import es.puig.wallet.infrastructure.broker.config.BrokerConfig;
 import okhttp3.mockwebserver.MockResponse;
 import okhttp3.mockwebserver.MockWebServer;
 import okhttp3.mockwebserver.RecordedRequest;
@@ -22,8 +22,8 @@ import java.lang.reflect.Field;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
-import static es.in2.wallet.domain.util.ApplicationConstants.ATTRIBUTES;
-import static es.in2.wallet.domain.util.ApplicationConstants.USER_ENTITY_PREFIX;
+import static es.puig.wallet.domain.util.ApplicationConstants.ATTRIBUTES;
+import static es.puig.wallet.domain.util.ApplicationConstants.USER_ENTITY_PREFIX;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.when;

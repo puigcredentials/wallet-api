@@ -1,11 +1,13 @@
 package es.in2.wallet.infrastructure.appconfiguration.service;
 
-import es.in2.wallet.infrastructure.appconfiguration.util.ConfigAdapterFactory;
-import es.in2.wallet.infrastructure.core.config.properties.AuthServerProperties;
-import es.in2.wallet.infrastructure.core.config.properties.UrlProperties;
-import es.in2.wallet.infrastructure.core.config.properties.VerifiablePresentationProperties;
-import es.in2.wallet.infrastructure.core.config.properties.WalletDrivingApplicationProperties;
-import es.in2.wallet.infrastructure.ebsi.config.properties.EbsiProperties;
+import es.puig.wallet.infrastructure.appconfiguration.service.AppConfigImpl;
+import es.puig.wallet.infrastructure.appconfiguration.service.GenericConfigAdapter;
+import es.puig.wallet.infrastructure.appconfiguration.util.ConfigAdapterFactory;
+import es.puig.wallet.infrastructure.core.config.properties.AuthServerProperties;
+import es.puig.wallet.infrastructure.core.config.properties.UrlProperties;
+import es.puig.wallet.infrastructure.core.config.properties.VerifiablePresentationProperties;
+import es.puig.wallet.infrastructure.core.config.properties.WalletDrivingApplicationProperties;
+import es.puig.wallet.infrastructure.ebsi.config.properties.EbsiProperties;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

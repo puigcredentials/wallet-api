@@ -1,13 +1,13 @@
 package es.in2.wallet.api.service;
 
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
-import es.in2.wallet.application.workflow.presentation.AttestationExchangeCommonWorkflow;
-import es.in2.wallet.domain.model.AuthorizationRequest;
-import es.in2.wallet.domain.model.CredentialStatus;
-import es.in2.wallet.domain.model.CredentialsBasicInfo;
-import es.in2.wallet.domain.model.VcSelectorRequest;
-import es.in2.wallet.domain.service.impl.DomeVpTokenServiceImpl;
-import es.in2.wallet.domain.util.ApplicationUtils;
+import es.puig.wallet.application.workflow.presentation.AttestationExchangeCommonWorkflow;
+import es.puig.wallet.domain.model.AuthorizationRequest;
+import es.puig.wallet.domain.model.CredentialStatus;
+import es.puig.wallet.domain.model.CredentialsBasicInfo;
+import es.puig.wallet.domain.model.VcSelectorRequest;
+import es.puig.wallet.domain.service.impl.DomeVpTokenServiceImpl;
+import es.puig.wallet.domain.util.ApplicationUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -22,9 +22,9 @@ import java.time.ZonedDateTime;
 import java.util.Arrays;
 import java.util.List;
 
-import static es.in2.wallet.domain.util.ApplicationConstants.DEFAULT_VC_TYPES_FOR_DOME_VERIFIER;
-import static es.in2.wallet.domain.util.ApplicationConstants.VC_JWT;
-import static es.in2.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
+import static es.puig.wallet.domain.util.ApplicationConstants.DEFAULT_VC_TYPES_FOR_DOME_VERIFIER;
+import static es.puig.wallet.domain.util.ApplicationConstants.VC_JWT;
+import static es.puig.wallet.domain.util.ApplicationUtils.getUserIdFromToken;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)

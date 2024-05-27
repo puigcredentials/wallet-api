@@ -1,8 +1,8 @@
 package es.in2.wallet.api.exception;
 
-import es.in2.wallet.domain.exception.*;
-import es.in2.wallet.domain.exception.handler.GlobalExceptionHandler;
-import es.in2.wallet.domain.model.GlobalErrorMessage;
+import es.puig.wallet.domain.exception.*;
+import es.puig.wallet.domain.exception.handler.GlobalExceptionHandler;
+import es.puig.wallet.domain.model.GlobalErrorMessage;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;

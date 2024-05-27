@@ -1,8 +1,8 @@
 package es.in2.wallet.api.service;
 
-import es.in2.wallet.domain.model.AuthorizationRequest;
-import es.in2.wallet.domain.service.impl.AuthorizationRequestServiceImpl;
-import es.in2.wallet.infrastructure.core.config.WebClientConfig;
+import es.puig.wallet.domain.model.AuthorizationRequest;
+import es.puig.wallet.domain.service.impl.AuthorizationRequestServiceImpl;
+import es.puig.wallet.infrastructure.core.config.WebClientConfig;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -15,8 +15,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-import static es.in2.wallet.domain.util.ApplicationConstants.CONTENT_TYPE;
-import static es.in2.wallet.domain.util.ApplicationConstants.CONTENT_TYPE_APPLICATION_JSON;
+import static es.puig.wallet.domain.util.ApplicationConstants.CONTENT_TYPE;
+import static es.puig.wallet.domain.util.ApplicationConstants.CONTENT_TYPE_APPLICATION_JSON;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

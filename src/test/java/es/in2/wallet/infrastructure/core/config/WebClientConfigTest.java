@@ -1,5 +1,6 @@
 package es.in2.wallet.infrastructure.core.config;
 
+import es.puig.wallet.infrastructure.core.config.WebClientConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.runner.ApplicationContextRunner;
 
