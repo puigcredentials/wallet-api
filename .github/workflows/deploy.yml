@@ -36,5 +36,5 @@ jobs:
           docker push $DOCKER_HUB_CLIENT_NAME/$IMAGE_TAG
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-          DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_TOKEN }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
           DOCKER_HUB_CLIENT_NAME: ${{ secrets.DOCKER_HUB_CLIENT_NAME }}
