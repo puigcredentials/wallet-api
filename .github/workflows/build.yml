@@ -8,12 +8,10 @@ on:
     types: [opened, synchronize, reopened]
 
 jobs:
-
   build:
     name: build and analyze
     runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
