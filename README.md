@@ -1,24 +1,3 @@
-<div align="center">
-
-<h1>Wallet Server</h1>
-<span>by </span><a href="https://in2.es">in2.es</a>
-<p><p>
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_wallet-server&metric=alert_status)](https://sonarcloud.io/dashboard?id=in2workspace_wallet-server)
-
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=bugs)](https://sonarcloud.io/summary/new_code?in2workspace_credential-issuer)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=vulnerabilities)](https://sonarcloud.io/dashboard?id=in2workspace_credential-issuer)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=security_rating)](https://sonarcloud.io/dashboard?id=in2workspace_credential-issuer)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=in2workspace_credential-issuer)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=ncloc)](https://sonarcloud.io/dashboard?id=in2workspace_credential-issuer)
-
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_wallet-server&metric=coverage)](https://sonarcloud.io/summary/new_code?id=in2workspace_wallet-server)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=in2workspace_credential-issuer)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=in2workspace_credential-issuer)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=in2workspace_credential-issuer)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=in2workspace_credential-issuer&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=in2workspace_credential-issuer)
-
-</div>
 
 ## Introduction
 
@@ -64,10 +43,10 @@ Ensure to adjust the environment variables to match your configurations.
 * Wallet-Server Configuration
 ```yaml
 wallet-server:
-  image: in2kizuna/wallet-server:v1.0.0
+  image: puigcredentials/wallet-api:v1.0.0
   environment:
     # Logging Configuration
-    LOGGING_LEVEL_ES_IN2_WALLET_SERVER: "DEBUG" # Set logging level (e.g., DEBUG, INFO, WARN, ERROR)
+    LOGGING_LEVEL_ES_PUIG_WALLET_API: "DEBUG" # Set logging level (e.g., DEBUG, INFO, WARN, ERROR)
     # OpenAPI Configuration
     OPENAPI_SERVER_URL: "https://yourdomain.com" # The URL where your Wallet Server is hosted
     OPENAPI_SERVER_DESCRIPTION: "Wallet Server API" # Brief description of your server
@@ -104,13 +83,7 @@ wallet-server:
 * [Google Java Style](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml)
 
 ## Project Status
-The project is currently at version **1.1.1** and is in a stable state.
-
-## Contact
-For any inquiries or collaboration, you can contact us at:
-* **Email:** [info@in2.es](mailto:info@in2.es)
-* **Name:** IN2, Ingeniería de la Información
-* **Website:** [https://in2.es](https://in2.es)
+The project is currently at version **1.0.0** and is in a stable state.
 
 ## Creation Date and Update Dates
 * **Creation Date:** February 19, 2024
